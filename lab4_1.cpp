@@ -9,8 +9,8 @@ int main()
 	scanf("%d", year.total);
 	year.current = 0;
 	char receive;
-	int score;
-	for (int i = 0; i < year.total; i++)
+	int medal[3][3], score;
+	for (int i = 0; i < year.total-3; i++)
 	{
 		
 	}

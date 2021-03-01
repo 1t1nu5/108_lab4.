@@ -9,7 +9,9 @@ int main()
 		switch (receive)
 		{
 			case '+':
-				
+				*pstack-1 += *pstack;
+				*pstack = 0;
+				pstack--;
 				break;
 			case '-':
 				break;

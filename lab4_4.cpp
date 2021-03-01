@@ -28,8 +28,9 @@ int main()
 										letter += 4;
 										break;
 								}
+								break;
 						}
-					break;
+						break;
 				}
 				break;
 		}

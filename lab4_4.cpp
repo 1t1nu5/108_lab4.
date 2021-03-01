@@ -4,11 +4,21 @@
 int main()
 {
 	char message[1000] = {}, cap;
-	bool cont = false, first = false;
+	bool cont = false, first = true;
 	scanf("%s", message);
 	for (int i = 0; i < 1000; i++)
 	{
 		// a an and at for i in of on the with
+		if (first == true)
+		{
+			if (message[i] != ' ')
+			{
+				cap = message[i];
+				first = false;
+				
+			}
+			continue;
+		}
 		switch (message[i])
 		{
 			case 'a':

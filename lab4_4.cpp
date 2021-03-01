@@ -124,6 +124,30 @@ int main()
 						break;
 				}
 				break;
+			case 'w':
+				switch (message[i+1])
+				{
+					case 'i':
+						switch (message[i+2])
+						{
+							case 't':
+								switch (message[i+3])
+								{
+									case 'h':
+										switch (messsage[i+4])
+										{
+											case ' ':
+												letter += 5;
+												cont++;
+												break;
+										}
+										break;
+								}
+								break;
+						}
+						break;
+				}
+				break;
 		}
 	}
 	if (cont == true)

@@ -96,13 +96,22 @@ int main()
 								break;
 						}
 						break;
+					case 'n':
+						switch (message[i+2])
+						{
+							case ' ':
+								letter += 3;
+								cont++;
+								break;
+						}
+						break;
 				}
 				break;
 		}
 	}
 	if (cont == true)
 	{
-		cont = false;
+		cont--;
 		continue;
 	}
 	return 0;

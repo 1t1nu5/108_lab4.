@@ -12,7 +12,17 @@ int main()
 		scanf("%s", swap);
 		for (int i = 0; i < 50 || swap[i] = ' '; i++)
 		{
-			
+			switch (locate)
+			{
+				case 0:
+					break;
+				case 1:
+					break;
+				case 2:
+					break;
+				default:
+					break;
+			}
 		}
 		round--;
 	}

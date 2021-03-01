@@ -15,7 +15,13 @@ int main()
 	}
 	for (int i = 0; i < ytotal-3; i++)
 	{
-		
+		score = 0;
+		for (int i = 0; i < 3; i++)
+		{
+			score += medal[0][i]*4;
+			score += medal[1][i]*2;
+			score += medal[2][i];
+		}
 	}
 	return 0;
 }

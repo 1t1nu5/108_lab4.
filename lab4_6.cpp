@@ -25,7 +25,13 @@ int main()
 	int length, max, min;
 	for (length = 49; length > 0; length--)
 	{
-		
+		for (max = length; max <= 49; max++)
+		{
+			for (min = 0; min <= (length - max); min++)
+			{
+				
+			}
+		}
 	}
 	return 0;
 }

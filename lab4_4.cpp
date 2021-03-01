@@ -73,6 +73,15 @@ int main()
 						letter += 2;
 						cont++;
 						break;
+					case 'n':
+						switch (message[i+2])
+						{
+							case ' ':
+								letter += 3;
+								cont++;
+								break;
+						}
+						break;
 				}
 				break;
 		}

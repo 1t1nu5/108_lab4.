@@ -19,6 +19,12 @@ int main()
 			}
 			continue;
 		}
+		else if (message[i] == ' ')
+		{
+			printf("%d", cap-'a'+'A');
+			first = true;
+			continue;
+		}
 		switch (message[i])
 		{
 			case 'a':

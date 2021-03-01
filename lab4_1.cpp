@@ -5,7 +5,7 @@ int main()
 	int ytotal, ycurrent;
 	scanf("%d", ytotal);
 	char receive[10], cut[3];
-	int medal[3][ytotal] = {}, score;
+	int medal[3][ytotal] = {}, score, best, worst;
 	for (int i = 0; i < ytotal; i++)
 	{
 		scanf("%s", receive);

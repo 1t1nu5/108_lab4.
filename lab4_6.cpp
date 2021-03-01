@@ -21,5 +21,8 @@ int main()
 	decap(msg3);
 	scanf("%s", msg4);
 	decap(msg4);
+	char search[50];
+	int max = 49;
+	strcpy(search, msg1);
 	return 0;
 }

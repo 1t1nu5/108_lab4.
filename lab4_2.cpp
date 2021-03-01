@@ -6,5 +6,9 @@ int main()
 	scanf("%d", &length);
 	char command[length];
 	scanf("%s", command);
+	for (int pointer = 0; pointer < length; pointer++)
+	{
+		
+	}
 	return 0;
 }

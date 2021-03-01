@@ -10,6 +10,10 @@ int main()
 	{
 		strcpy(swap, " ");
 		scanf("%s", swap);
+		for (int i = 0; i < 50 || swap[i] = ' '; i++)
+		{
+			
+		}
 		round--;
 	}
 	return 0;

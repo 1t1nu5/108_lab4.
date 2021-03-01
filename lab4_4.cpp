@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 int main()
 {
 	char message[1000] = {};
+	bool cont = false;
 	scanf("%s", message);
 	for (int i = 0; i < 1000; i++)
 	{
@@ -14,18 +16,21 @@ int main()
 				{
 					case ' ':
 						letter += 2;
+						cont++;
 						break;
 					case 'n':
 						switch (message[i+2])
 						{
 							case ' ':
 								letter += 3;
+								cont++;
 								break;
 							case 'd':
 								switch (message[i+3])
 								{
 									case ' ':
 										letter += 4;
+										cont++;
 										break;
 								}
 								break;
@@ -34,6 +39,11 @@ int main()
 				}
 				break;
 		}
+	}
+	if (cont == true)
+	{
+		cont = false;
+		continue;
 	}
 	return 0;
 }

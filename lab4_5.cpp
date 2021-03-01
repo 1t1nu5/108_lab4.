@@ -15,6 +15,19 @@ int main()
 			switch (locate)
 			{
 				case 0:
+					switch (swap[i])
+					{
+						case 'D':
+							locate = 2;
+							break;
+						case 'C':
+							locate = 3;
+							break;
+						case 'B':
+						case 'E':
+							locate = 4;
+							break;
+					}
 					break;
 				case 1:
 					break;

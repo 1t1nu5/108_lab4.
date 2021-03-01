@@ -36,6 +36,15 @@ int main()
 								break;
 						}
 						break;
+					case 't':
+						switch (message[i+2])
+						{
+							case ' ':
+								letter += 3;
+								cont++;
+								break;
+						}
+						break;
 				}
 				break;
 		}

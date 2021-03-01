@@ -31,21 +31,21 @@ int main()
 				switch (message[i+1])
 				{
 					case ' ':
-						letter += 2;
+						i += 2;
 						cont++;
 						break;
 					case 'n':
 						switch (message[i+2])
 						{
 							case ' ':
-								letter += 3;
+								i += 3;
 								cont++;
 								break;
 							case 'd':
 								switch (message[i+3])
 								{
 									case ' ':
-										letter += 4;
+										i += 4;
 										cont++;
 										break;
 								}
@@ -56,7 +56,7 @@ int main()
 						switch (message[i+2])
 						{
 							case ' ':
-								letter += 3;
+								i += 3;
 								cont++;
 								break;
 						}
@@ -73,7 +73,7 @@ int main()
 								switch (message[i+3])
 								{
 									case ' ':
-										letter += 4;
+										i += 4;
 										cont++;
 										break;
 								}
@@ -86,14 +86,14 @@ int main()
 				switch (message[i+1])
 				{
 					case ' ':
-						letter += 2;
+						i += 2;
 						cont++;
 						break;
 					case 'n':
 						switch (message[i+2])
 						{
 							case ' ':
-								letter += 3;
+								i += 3;
 								cont++;
 								break;
 						}
@@ -107,7 +107,7 @@ int main()
 						switch (message[i+2])
 						{
 							case ' ':
-								letter += 3;
+								i += 3;
 								cont++;
 								break;
 						}
@@ -116,7 +116,7 @@ int main()
 						switch (message[i+2])
 						{
 							case ' ':
-								letter += 3;
+								i += 3;
 								cont++;
 								break;
 						}
@@ -132,7 +132,7 @@ int main()
 							case 'e':
 								switch (message[i+3])
 								{
-									letter += 4;
+									i += 4;
 									cont++;
 								}
 								break;
@@ -150,10 +150,10 @@ int main()
 								switch (message[i+3])
 								{
 									case 'h':
-										switch (messsage[i+4])
+										switch (message[i+4])
 										{
 											case ' ':
-												letter += 5;
+												i += 5;
 												cont++;
 												break;
 										}
@@ -165,11 +165,11 @@ int main()
 				}
 				break;
 		}
-	}
-	if (cont == true)
-	{
-		cont--;
-		continue;
+		if (cont == true)
+		{
+			cont = false;
+			continue;
+		}
 	}
 	return 0;
 }

@@ -168,6 +168,7 @@ int main()
 		if (cont == true)
 		{
 			cont = false;
+			first = true;
 			continue;
 		}
 	}

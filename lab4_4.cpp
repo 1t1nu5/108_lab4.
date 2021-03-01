@@ -3,5 +3,6 @@
 int main()
 {
 	char message[1000] = {};
+	scanf("%s", message);
 	return 0;
 }

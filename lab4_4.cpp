@@ -21,6 +21,13 @@ int main()
 							case ' ':
 								letter += 3;
 								break;
+							case 'd':
+								switch (message[i+3])
+								{
+									case ' ':
+										letter += 4;
+										break;
+								}
 						}
 					break;
 				}

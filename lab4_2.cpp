@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	int stack, *pstack = &stack, current, time, receive;
+	int stack, *pstack = &stack, current = 0, time, receive;
 	scanf("%d", &time);
 	while (time > 0)
 	{

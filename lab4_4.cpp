@@ -21,15 +21,13 @@ int main()
 				first = false;
 				
 			}
-			continue;
 		}
 		else if (m[i] == ' ')
 		{
 			printf("%c", cap-'a'+'A');
 			first = true;
-			continue;
 		}
-		if (m[0] == 'a' && m[1] == ' ')
+		else if (m[0] == 'a' && m[1] == ' ')
 		{
 			cont = true;
 			first = false;
@@ -87,8 +85,8 @@ int main()
 		}
 		if (cont == true)
 		{
+			cont = false;
 			first = false;
-			continue;
 		}
 	}
 	return 0;

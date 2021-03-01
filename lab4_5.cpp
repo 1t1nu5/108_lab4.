@@ -18,18 +18,31 @@ int main()
 					switch (swap[i])
 					{
 						case 'D':
+							locate = 1;
+							break;
+						case 'C':
+							locate = 2;
+							break;
+						case 'B':
+						case 'E':
+							locate = 3;
+							break;
+					}
+					break;
+				case 1:
+					switch (swap[i])
+					{
+						case 'D':
+							locate = 0;
+							break;
+						case 'A':
+						case 'E':
 							locate = 2;
 							break;
 						case 'C':
 							locate = 3;
 							break;
-						case 'B':
-						case 'E':
-							locate = 4;
-							break;
 					}
-					break;
-				case 1:
 					break;
 				case 2:
 					break;

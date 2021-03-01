@@ -31,21 +31,21 @@ int main()
 				switch (message[i+1])
 				{
 					case ' ':
-						i += 2;
+						i++;
 						cont++;
 						break;
 					case 'n':
 						switch (message[i+2])
 						{
 							case ' ':
-								i += 3;
+								i += 2;
 								cont++;
 								break;
 							case 'd':
 								switch (message[i+3])
 								{
 									case ' ':
-										i += 4;
+										i += 3;
 										cont++;
 										break;
 								}
@@ -56,7 +56,7 @@ int main()
 						switch (message[i+2])
 						{
 							case ' ':
-								i += 3;
+								i += 2;
 								cont++;
 								break;
 						}
@@ -73,7 +73,7 @@ int main()
 								switch (message[i+3])
 								{
 									case ' ':
-										i += 4;
+										i += 3;
 										cont++;
 										break;
 								}
@@ -86,14 +86,14 @@ int main()
 				switch (message[i+1])
 				{
 					case ' ':
-						i += 2;
+						i++;
 						cont++;
 						break;
 					case 'n':
 						switch (message[i+2])
 						{
 							case ' ':
-								i += 3;
+								i += 2;
 								cont++;
 								break;
 						}
@@ -107,7 +107,7 @@ int main()
 						switch (message[i+2])
 						{
 							case ' ':
-								i += 3;
+								i += 2;
 								cont++;
 								break;
 						}
@@ -116,7 +116,7 @@ int main()
 						switch (message[i+2])
 						{
 							case ' ':
-								i += 3;
+								i += 2;
 								cont++;
 								break;
 						}
@@ -132,7 +132,7 @@ int main()
 							case 'e':
 								switch (message[i+3])
 								{
-									i += 4;
+									i += 3;
 									cont++;
 								}
 								break;
@@ -153,7 +153,7 @@ int main()
 										switch (message[i+4])
 										{
 											case ' ':
-												i += 5;
+												i += 4;
 												cont++;
 												break;
 										}

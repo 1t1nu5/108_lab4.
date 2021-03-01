@@ -22,13 +22,10 @@ int main()
 	scanf("%s", msg4);
 	decap(msg4);
 	char search[50];
-	int max = 49, int min = 0;
-	strcpy(search, msg1);
-	do
+	int length, max, min;
+	for (length = 49; length > 0; length--)
 	{
 		
-		max--;
 	}
-	while (max > 0)
 	return 0;
 }

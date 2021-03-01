@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	int stack, *pstack = &stack, current = 0, time, receive;
+	int stack, *pstack = &stack, time, receive;
 	scanf("%d", &time);
 	while (time > 0)
 	{
@@ -9,6 +9,7 @@ int main()
 		switch (receive)
 		{
 			case '+':
+				
 				break;
 			case '-':
 				break;

@@ -59,7 +59,20 @@ int main()
 							break;
 					}
 					break;
-				default:
+				case 3:
+					switch (swap[i])
+					{
+						case 'B':
+						case 'E':
+							locate = 0;
+							break;
+						case 'C':
+							locate = 1;
+							break;
+						case 'D':
+							locate = 2;
+							break;
+					}
 					break;
 			}
 		}

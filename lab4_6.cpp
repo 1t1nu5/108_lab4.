@@ -21,7 +21,7 @@ int main()
 	decap(msg3);
 	scanf("%s", msg4);
 	decap(msg4);
-	char search[50];
+	char search[50] = {};
 	char tempsearch[50];
 	int length, max, min;
 	for (length = 49; length > 0; length--)
@@ -39,8 +39,12 @@ int main()
 		}
 		if (strstr(tempsearch, msg1) != 0)
 		{
-			strcpy(search, tempsearch);
+			if (strcmp(search, tempsearch) > 0)
+			{
+				strcpy(search, tempsearch);
+			}
 		}
 	}
+	printf("%s", search);
 	return 0;
 }

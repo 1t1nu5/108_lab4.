@@ -3,8 +3,8 @@
 #include <stdbool.h>
 int main()
 {
-	char message[1000] = {};
-	bool cont = false;
+	char message[1000] = {}, cap;
+	bool cont = false, first = false;
 	scanf("%s", message);
 	for (int i = 0; i < 1000; i++)
 	{

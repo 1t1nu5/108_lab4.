@@ -29,7 +29,11 @@ int main()
 		{
 			for (min = 0; min <= (length - max); min++)
 			{
-				
+				strcpy(search, " ");
+				for (int i = 0; i < max - min; i++)
+				{
+					search[i] = msg1[min+i];
+				}
 			}
 		}
 	}

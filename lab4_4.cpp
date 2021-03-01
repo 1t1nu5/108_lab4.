@@ -47,6 +47,25 @@ int main()
 						break;
 				}
 				break;
+			case 'f':
+				switch (message[i+1])
+				{
+					case 'o':
+						switch (message[i+2])
+						{
+							case 'r':
+								switch (message[i+3])
+								{
+									case ' ':
+										letter += 4;
+										cont++;
+										break;
+								}
+								break;
+						}
+						break;
+				}
+				break;
 		}
 	}
 	if (cont == true)

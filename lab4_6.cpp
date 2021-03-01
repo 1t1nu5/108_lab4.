@@ -24,5 +24,11 @@ int main()
 	char search[50];
 	int max = 49;
 	strcpy(search, msg1);
+	do
+	{
+		
+		max--;
+	}
+	while (max > 0)
 	return 0;
 }

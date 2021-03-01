@@ -29,7 +29,18 @@ int main()
 			first = true;
 			continue;
 		}
-		
+		if (m[0] == 'a' && m[1] == ' ')
+		{
+			cont = true;
+			first = false;
+			i++;
+		}
+		else if (m[0] == 'a' && m[1] == 'n' && m[2] == ' ')
+		{
+			cont = true;
+			first = false;
+			i++;
+		}
 	}
 	return 0;
 }

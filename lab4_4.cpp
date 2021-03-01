@@ -3,8 +3,12 @@
 #include <stdbool.h>
 int main()
 {
-	char message[1000] = {}, cap;
+	char message[1000], cap;
 	bool cont = false, first = true;
+	for (int i = 0; i < 1000; i++)
+	{
+		message[i] = ' ';
+	}
 	scanf("%s", message);
 	for (int i = 0; i < 1000; i++)
 	{
@@ -21,7 +25,7 @@ int main()
 		}
 		else if (message[i] == ' ')
 		{
-			printf("%d", cap-'a'+'A');
+			printf("%c", cap-'a'+'A');
 			first = true;
 			continue;
 		}

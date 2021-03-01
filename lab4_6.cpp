@@ -22,7 +22,7 @@ int main()
 	scanf("%s", msg4);
 	decap(msg4);
 	char search[50];
-	int max = 49;
+	int max = 49, int min = 0;
 	strcpy(search, msg1);
 	do
 	{

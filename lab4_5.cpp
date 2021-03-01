@@ -76,8 +76,9 @@ int main()
 					break;
 			}
 		}
+		printf("%d", locate);
+		locate = 0;
 		round--;
 	}
-	printf("%d", locate);
 	return 0;
 }

@@ -5,7 +5,7 @@ int main()
 	int ytotal, ycurrent;
 	scanf("%d", ytotal);
 	char receive[10], cut[3];
-	int medal[3][ytotal] = {}, score, best, worst;
+	int medal[3][ytotal] = {}, score, best = 0, worst = 2000;
 	for (int i = 0; i < ytotal; i++)
 	{
 		scanf("%s", receive);
@@ -22,6 +22,15 @@ int main()
 			score += medal[1][i]*2;
 			score += medal[2][i];
 		}
+		if (score > best)
+		{
+			best = score;
+		}
+		if (score < worst)
+		{
+			worst = score;
+		}
 	}
+	printf("%d %d", best, worst);
 	return 0;
 }

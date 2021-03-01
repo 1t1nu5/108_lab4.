@@ -27,58 +27,58 @@ int main()
 			printf("%c", cap-'a'+'A');
 			first = true;
 		}
-		else if (m[0] == 'a' && m[1] == ' ')
+		else if (m[i] == 'a' && m[i+1] == ' ')
 		{
 			cont = true;
 			first = false;
 			i++;
 		}
-		else if (m[0] == 'a' && m[1] == 'n' && m[2] == ' ')
+		else if (m[i] == 'a' && m[i+1] == 'n' && m[i+2] == ' ')
 		{
 			cont = true;
 			i += 2;
 		}
-		else if (m[0] == 'a' && m[1] == 'n' && m[2] == 'd' && m[3] == ' ')
+		else if (m[i] == 'a' && m[i+1] == 'n' && m[i+2] == 'd' && m[i+3] == ' ')
 		{
 			cont = true;
 			i += 3;
 		}
-		else if (m[0] == 'a' && m[1] == 't' && m[2] == ' ')
+		else if (m[i] == 'a' && m[i+1] == 't' && m[i+2] == ' ')
 		{
 			cont = true;
 			i += 2;
 		}
-		else if (m[0] == 'f' && m[1] == 'o' && m[2] == 'r' && m[3] == ' ')
+		else if (m[i] == 'f' && m[i+1] == 'o' && m[i+2] == 'r' && m[i+3] == ' ')
 		{
 			cont = true;
 			i += 3;
 		}
-		else if (m[0] == 'i' && m[3] == ' ')
+		else if (m[i] == 'i' && m[i+1] == ' ')
 		{
 			cont = true;
 			i++;
 		}
-		else if (m[0] == 'i' && m[1] == 'n' && m[2] == ' ')
+		else if (m[i] == 'i' && m[i+1] == 'n' && m[i+2] == ' ')
 		{
 			cont = true;
 			i += 2;
 		}
-		else if (m[0] == 'o' && m[1] == 'f' && m[2] == ' ')
+		else if (m[i] == 'o' && m[i+1] == 'f' && m[i+2] == ' ')
 		{
 			cont = true;
 			i += 2;
 		}
-		else if (m[0] == 'o' && m[1] == 'n' && m[2] == ' ')
+		else if (m[i] == 'o' && m[i+1] == 'n' && m[i+2] == ' ')
 		{
 			cont = true;
 			i += 2;
 		}
-		else if (m[0] == 't' && m[1] == 'h' && m[2] == 'e' && m[3] == ' ')
+		else if (m[i] == 't' && m[i+1] == 'h' && m[i+2] == 'e' && m[i+3] == ' ')
 		{
 			cont = true;
 			i += 3;
 		}
-		else if (m[0] == 'w' && m[1] == 'i' && m[2] == 't' && m[3] == 'h' && m[4] == ' ')
+		else if (m[i] == 'w' && m[i+1] == 'i' && m[i+2] == 't' && m[i+3] == 'h' && m[i+4] == ' ')
 		{
 			cont = true;
 			i += 4;

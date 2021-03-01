@@ -6,7 +6,7 @@ void decap(char msg[])
 	{
 		if (msg[i] >= 'A' && msg[i] <= 'Z')
 		{
-			msg[i] - 'A' + 'a';
+			msg[i] += 'a' - 'A';
 		}
 	}
 }

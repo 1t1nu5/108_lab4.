@@ -9,6 +9,7 @@ int main()
 	while (round > 0)
 	{
 		strcpy(swap, " ");
+		scanf("%s", swap);
 		round--;
 	}
 	return 0;
